@@ -1,2 +1,19 @@
-{{ExamDatePair['2023'][0].name}}: {{ExamDatePair['2023'][0].date}}:
-{{ExamDatePair['2023'][0].fromNow}}
+<table mat-table [dataSource]="ExamDatePair['2023']">
+  <ng-container matColumnDef="name">
+    <th mat-header-cell *matHeaderCellDef> 考试名 </th>
+    <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+  </ng-container>
+  <ng-container matColumnDef="date">
+    <th mat-header-cell *matHeaderCellDef> 时间 </th>
+    <td mat-cell *matCellDef="let element"> {{element.date}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="remain">
+    <th mat-header-cell *matHeaderCellDef> 剩余 </th>
+    <td mat-cell *matCellDef="let element"> {{element.remain}} </td>
+  </ng-container>
+
+  <tr mat-header-row *matHeaderRowDef="displayColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayColumns;"></tr>
+</table>
+

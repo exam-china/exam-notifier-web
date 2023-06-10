@@ -1,12 +1,5 @@
 import { Component } from '@angular/core';
-import * as moment from 'moment';
-
-function getRemain(date: string) {
-  var eventdate = moment(date);
-  var todaysdate = moment();
-  return eventdate.diff(todaysdate, 'days');
-}
-
+import { exams } from './data/exam';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -16,12 +9,13 @@ function getRemain(date: string) {
 export class AppComponent {
 
   ExamDatePair = {
-    '2023': [{ name: '一级建造师', date: new Date("2023-09-05"), fromNow: getRemain("2023-09-09")}],
+    '2023': exams['2023'],
     '2024': [{}],
   };
 
   title = 'exam-notifier';
-
+  dataSource = exams['2023'];
+  displayColumns :string[] = ['name', 'date', 'remain'];
   constructor() {
 
   }

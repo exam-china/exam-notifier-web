@@ -1,4 +1,20 @@
-export const exams = {
+import * as moment from 'moment';
+
+function getRemain(date: string) {
+  var eventdate = moment(date);
+  var todaysdate = moment();
+  return eventdate.diff(todaysdate, 'days');
+}
+
+
+export interface IExam {
+  name: string,
+  date: string,
+  remain?: number
+}
+
+
+const _exams : any = {
   '2023': [
     { name: '一级建造师', date: '2023-09-09' },
     { name: '注册城乡规划师', date: '2023-09-16' },
@@ -25,3 +41,9 @@ export const exams = {
     { name: '经济（初级、中级）', date: '2023-11-11' },
   ],
 };
+
+for(let i = 0; i < _exams['2023'].length; i++) {
+  _exams["2023"][i].remain = getRemain(_exams["2023"][i].date);
+}
+
+export const exams = _exams;
