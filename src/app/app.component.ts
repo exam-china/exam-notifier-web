@@ -14,6 +14,7 @@ function getRemain(date: string) {
 })
 
 export class AppComponent {
+
   ExamDatePair = {
     '2023': [{ name: '一级建造师', date: new Date("2023-09-05"), fromNow: getRemain("2023-09-09")}],
     '2024': [{}],
