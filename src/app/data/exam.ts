@@ -16,14 +16,14 @@ export interface IExam {
 const yijian = [
   {
     name: '建设工程经济',
-    cover: "covers/yijian/2023/gcjj.png",
+    cover: 'covers/yijian/2023/gcjj.png',
     date: '2023-09-09',
     start: '09:00',
     end: '11:00',
   },
   {
     name: '建设工程法规及相关知识',
-    cover: "covers/yijian/2023/gcfg.jpeg",
+    cover: 'covers/yijian/2023/gcfg.jpeg',
     date: '2023-09-09',
     start: '14:00',
     end: '17:00',
@@ -68,9 +68,16 @@ const _exams: any = {
     { name: '二级注册结构工程师', date: '2023-11-05' },
     // { name: '翻译专业资格（一、二、三级）', date: '2023-11-04' },
     { name: '翻译专业资格', date: '2023-11-04' },
+    { name: '计算机技术与软件', date: '2023-11-04' },
     { name: '一级注册消防工程师', date: '2023-11-04' },
     // { name: '经济（初级、中级）', date: '2023-11-11' },
     { name: '经济', date: '2023-11-11' },
+    { name: '导游资格', date: '2023-11-25' },
+    { name: '2024国家公务员', date: '2023-11-26' },
+    { name: '计算机等级考试', date: '2023-12-02' },
+    { name: '英语四级考试', date: '2023-12-09' },
+    { name: '英语六级考试', date: '2023-12-09' },
+    { name: ' 研究生考试', date: '2023-12-23' },
   ],
 };
 
