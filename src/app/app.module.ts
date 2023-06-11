@@ -11,6 +11,8 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { FormsModule } from '@angular/forms';
+import { MatButtonToggleModule } 
+    from "@angular/material/button-toggle";
 
 @NgModule({
   declarations: [AppComponent],
@@ -29,6 +31,7 @@ import { FormsModule } from '@angular/forms';
     MatIconModule,
     MatSlideToggleModule,
     FormsModule,
+    MatButtonToggleModule
   ],
   providers: [],
   bootstrap: [AppComponent],

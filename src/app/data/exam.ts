@@ -6,16 +6,43 @@ function getRemain(date: string) {
   return eventdate.diff(todaysdate, 'days');
 }
 
-
 export interface IExam {
-  name: string,
-  date: string,
-  remain?: number,
-  subscribed?: boolean
+  name: string;
+  date: string;
+  remain?: number;
+  subscribed?: boolean;
 }
 
+const yijian = [
+  {
+    name: '建设工程经济',
+    cover: "covers/yijian/2023/gcjj.png",
+    date: '2023-09-09',
+    start: '09:00',
+    end: '11:00',
+  },
+  {
+    name: '建设工程法规及相关知识',
+    cover: "covers/yijian/2023/gcfg.jpeg",
+    date: '2023-09-09',
+    start: '14:00',
+    end: '17:00',
+  },
+  {
+    name: '建设工程项目管理',
+    date: '2023-09-10',
+    start: '09:00',
+    end: '12:00',
+  },
+  {
+    name: '建设工程法规及相关知识',
+    date: '2023-09-10',
+    start: '14:00',
+    end: '18:00',
+  },
+];
 
-const _exams : any = {
+const _exams: any = {
   '2023': [
     { name: '一级建造师', date: '2023-09-09' },
     { name: '注册城乡规划师', date: '2023-09-16' },
@@ -48,17 +75,17 @@ const _exams : any = {
 };
 
 export class ExamData {
-  static key: string = "exams";
-  data:any;
+  static key: string = 'exams';
+  data: any;
   subscribedExams: IExam[] = [];
   constructor() {
     const json = localStorage.getItem(ExamData.key);
     if (json) {
       this.data = JSON.parse(json);
     } else {
-      this.data = _exams['2023']
+      this.data = _exams['2023'];
     }
-    for(let i = 0; i < this.data.length; i++) {
+    for (let i = 0; i < this.data.length; i++) {
       this.data[i].remain = getRemain(this.data[i].date);
       if (this.data[i].subscribed) {
         this.subscribedExams.push(this.data[i]);
@@ -70,7 +97,7 @@ export class ExamData {
 
   recaculateSubscription() {
     this.subscribedExams = [];
-    for(let i = 0; i < this.data.length; i++) {
+    for (let i = 0; i < this.data.length; i++) {
       if (this.data[i].subscribed) {
         this.subscribedExams.push(this.data[i]);
       } else {
@@ -85,7 +112,7 @@ export class ExamData {
   }
 
   subscribe(name: string, isSubscribe: boolean) {
-    for(let i = 0; i < this.data.length; i++) {
+    for (let i = 0; i < this.data.length; i++) {
       if (this.data[i].name === name) {
         this.data[i].subscribed = isSubscribe;
         break;

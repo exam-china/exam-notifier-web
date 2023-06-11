@@ -21,23 +21,23 @@
   </button>
 </mat-toolbar>
 
-<div [ngClass]="{ 'subscribed-exam': true }" *ngIf="subscribedExams.length" >
+<div [ngClass]="{ 'subscribed-exam': true }" *ngIf="subscribedExams.length">
   <p [ngClass]="{ left: true }">
     距离 <span [ngClass]="{ year: true }">2023</span> 年
   </p>
-  <div *ngFor="let item of subscribedExams; index as i;">
+  <div
+    [ngClass]="{ subscribed: true }"
+    *ngFor="let item of subscribedExams; index as i"
+  >
     <p [ngClass]="{ middle: true }">
       <span [ngClass]="{ name: true }">{{ item.name }}</span>
       考试
     </p>
-    <span [ngClass]="{ spacer: true }"></span>
-    <p [ngClass]="{ right: true }">
-      还有
-      <span [ngClass]="{ remained: true }">{{ item.remain }}</span
+    <p>
+      还有<span [ngClass]="{ remained: true }">{{ item.remain }}</span
       >天
     </p>
   </div>
-
 </div>
 
 <table mat-table [dataSource]="dataSource">
@@ -60,7 +60,7 @@
   </ng-container>
 
   <ng-container matColumnDef="remain">
-    <th mat-header-cell *matHeaderCellDef>剩余<br/>天数</th>
+    <th mat-header-cell *matHeaderCellDef>剩余<br />天数</th>
     <td mat-cell *matCellDef="let element" class="remain">
       {{ element.remain }}
     </td>
