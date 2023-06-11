@@ -10,7 +10,8 @@ function getRemain(date: string) {
 export interface IExam {
   name: string,
   date: string,
-  remain?: number
+  remain?: number,
+  subscribed?: boolean
 }
 
 
@@ -46,8 +47,35 @@ const _exams : any = {
   ],
 };
 
-for(let i = 0; i < _exams['2023'].length; i++) {
-  _exams["2023"][i].remain = getRemain(_exams["2023"][i].date);
+export class ExamData {
+  static key: string = "exams";
+  data:any;
+  constructor() {
+    const json = localStorage.getItem(ExamData.key);
+    if (json) {
+      this.data = JSON.parse(json);
+    } else {
+      this.data = _exams['2023']
+    }
+    for(let i = 0; i < this.data.length; i++) {
+      this.data[i].remain = getRemain(this.data[i].date);
+      this.data[i].subscribed = this.data[i].subscribed ? this.data[i].subscribed : false;
+    }
+  }
+
+  save() {
+    localStorage.setItem(ExamData.key, JSON.stringify(this.data));
+  }
+
+  subscribe(name: string, isSubscribe: boolean) {
+    for(let i = 0; i < this.data.length; i++) {
+      if (this.data[i].name === name) {
+        this.data[i].subscribed = isSubscribe;
+        break;
+      }
+    }
+    this.save();
+  }
 }
 
 export const exams = _exams;

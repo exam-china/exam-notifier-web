@@ -10,3 +10,16 @@ table {
         text-align: center;
     }
 }
+
+.toolbar-spacer {
+    flex: 1 1 auto;
+  }
+
+mat-toolbar {
+    button {
+        border: 0;
+    }
+  }
+.remain {
+    color: red;
+}

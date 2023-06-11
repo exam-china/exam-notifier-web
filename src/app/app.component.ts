@@ -1,24 +1,20 @@
 import { Component } from '@angular/core';
-import { exams } from './data/exam';
+import { ExamData, IExam } from './data/exam';
+import { MatSlideToggleChange } from '@angular/material/slide-toggle';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
 })
-
 export class AppComponent {
-
-  ExamDatePair = {
-    '2023': exams['2023'],
-    '2024': [{}],
-  };
-
   title = 'exam-notifier';
-  dataSource = exams['2023'];
-  displayColumns :string[] = ['name', 'date', 'remain'];
-  constructor() {
+  examData = new ExamData();
+  dataSource = this.examData.data;
+  displayColumns: string[] = ['subscribed', 'name', 'date', 'remain'];
+  constructor() {}
 
+  public toggle(element: IExam, event: MatSlideToggleChange) {
+    console.log('toggle', event.checked);
+    this.examData.subscribe(element.name, event.checked);
   }
-
-
 }
