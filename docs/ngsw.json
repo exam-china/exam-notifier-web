@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1686467539786,
+  "timestamp": 1686485762613,
   "index": "https://t1bao.github.io/exam-shedule/index.html",
   "assetGroups": [
     {
@@ -13,7 +13,7 @@
       "urls": [
         "https://t1bao.github.io/exam-shedule/favicon.ico",
         "https://t1bao.github.io/exam-shedule/index.html",
-        "https://t1bao.github.io/exam-shedule/main.b02df8b99e872d23.js",
+        "https://t1bao.github.io/exam-shedule/main.a4d78d9141a79b94.js",
         "https://t1bao.github.io/exam-shedule/manifest.webmanifest",
         "https://t1bao.github.io/exam-shedule/polyfills.f3b8ddbeea7805a6.js",
         "https://t1bao.github.io/exam-shedule/runtime.e9a7dea52a76a6eb.js",
@@ -29,6 +29,8 @@
         "ignoreVary": true
       },
       "urls": [
+        "https://t1bao.github.io/exam-shedule/assets/covers/yijian/2023/gcfg.jpeg",
+        "https://t1bao.github.io/exam-shedule/assets/covers/yijian/2023/gcjj.png",
         "https://t1bao.github.io/exam-shedule/assets/icons/icon-128x128.png",
         "https://t1bao.github.io/exam-shedule/assets/icons/icon-144x144.png",
         "https://t1bao.github.io/exam-shedule/assets/icons/icon-152x152.png",
@@ -44,6 +46,8 @@
   ],
   "dataGroups": [],
   "hashTable": {
+    "https://t1bao.github.io/exam-shedule/assets/covers/yijian/2023/gcfg.jpeg": "8d7e51f5df5cea9061a89e15ce912bae18e9db5c",
+    "https://t1bao.github.io/exam-shedule/assets/covers/yijian/2023/gcjj.png": "3674842450f2521c2d3f4155d4bd26ac3f247bf1",
     "https://t1bao.github.io/exam-shedule/assets/icons/icon-128x128.png": "b1f06c7d714abb4a0cc4d1f7c954feb26826e4c4",
     "https://t1bao.github.io/exam-shedule/assets/icons/icon-144x144.png": "96a0d629765c1bc85d9263c6bc83094ca776d267",
     "https://t1bao.github.io/exam-shedule/assets/icons/icon-152x152.png": "b1fbbee3902eb96a7658e3bb006f31f78ca5a44c",
@@ -54,8 +58,8 @@
     "https://t1bao.github.io/exam-shedule/assets/icons/icon-96x96.png": "592885efcbfee27e5e20be4fa3043589390d2740",
     "https://t1bao.github.io/exam-shedule/assets/logo.png": "28374dbacc84f0514018f44681344fc5f5a9ba34",
     "https://t1bao.github.io/exam-shedule/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "https://t1bao.github.io/exam-shedule/index.html": "d00712e25209cff189939c16a6ee41c7f0fed4f8",
-    "https://t1bao.github.io/exam-shedule/main.b02df8b99e872d23.js": "10e864c5d9e941d679958af1af0b18a2b8bbda39",
+    "https://t1bao.github.io/exam-shedule/index.html": "8f1a833b73a382a000fe66647a815daca6a1d592",
+    "https://t1bao.github.io/exam-shedule/main.a4d78d9141a79b94.js": "55c9dbf41c4ab19f1c5e5c165ed3d9f54c0bd2b4",
     "https://t1bao.github.io/exam-shedule/manifest.webmanifest": "0bf7a9da351edc77fd8ca759fd534f75ac001c54",
     "https://t1bao.github.io/exam-shedule/polyfills.f3b8ddbeea7805a6.js": "ac62149bdc211ca85d04e2f5e7198a2a8ef21d16",
     "https://t1bao.github.io/exam-shedule/runtime.e9a7dea52a76a6eb.js": "d650b3423b9e1ea6e9cc3e4bade20508da654a7e",
