@@ -1,25 +1,62 @@
 table {
-    width: 100%;
-    th {
-        font-weight: bold;
-        color: blue;
-        text-align: center;
-    }
+  width: 100%;
+  th {
+    font-weight: bold;
+    color: blue;
+    text-align: center;
+  }
 
-    td {
-        text-align: center;
+  td {
+    .remain {
+      color: red;
     }
+    text-align: center;
+  }
 }
 
-.toolbar-spacer {
+mat-toolbar {
+  button {
+    border: 0;
+  }
+  img {
+    width: 1.5rem;
+  }
+  span {
+    margin-left: 0.5rem;
+  }
+  .toolbar-spacer {
     flex: 1 1 auto;
   }
+}
 
-mat-toolbar {
-    button {
-        border: 0;
+.subscribed-exam {
+  .middle {
+    text-align: center;
+  }
+  .right {
+    text-align: right;
+    position: relative;
+    height: 6em;
+    line-height: 6em;
+  }
+  p {
+    padding: 0.5em 1.5em 0 1.5em;
+    font-size: 1.2em;
+
+    .year {
+      color: #3f51b5;
+      font-size: 2em;
+    }
+    .name {
+      color: #2196f3;
+      font-size: 2em;
+    }
+    .remained {
+      color: #e91e63;
+      font-size: 5em;
+    }
+    .spacer {
+      flex: 1 1 auto;
     }
   }
-.remain {
-    color: red;
 }

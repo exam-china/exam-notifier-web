@@ -50,6 +50,7 @@ const _exams : any = {
 export class ExamData {
   static key: string = "exams";
   data:any;
+  subscribedExams: IExam[] = [];
   constructor() {
     const json = localStorage.getItem(ExamData.key);
     if (json) {
@@ -59,8 +60,24 @@ export class ExamData {
     }
     for(let i = 0; i < this.data.length; i++) {
       this.data[i].remain = getRemain(this.data[i].date);
-      this.data[i].subscribed = this.data[i].subscribed ? this.data[i].subscribed : false;
+      if (this.data[i].subscribed) {
+        this.subscribedExams.push(this.data[i]);
+      } else {
+        this.data[i].subscribed = false;
+      }
     }
+  }
+
+  recaculateSubscription() {
+    this.subscribedExams = [];
+    for(let i = 0; i < this.data.length; i++) {
+      if (this.data[i].subscribed) {
+        this.subscribedExams.push(this.data[i]);
+      } else {
+        this.data[i].subscribed = false;
+      }
+    }
+    return this.subscribedExams;
   }
 
   save() {
@@ -74,6 +91,7 @@ export class ExamData {
         break;
       }
     }
+    this.recaculateSubscription();
     this.save();
   }
 }
