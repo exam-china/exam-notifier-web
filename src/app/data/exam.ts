@@ -13,35 +13,6 @@ export interface IExam {
   subscribed?: boolean;
 }
 
-const yijian = [
-  {
-    name: '建设工程经济',
-    cover: 'covers/yijian/2023/gcjj.png',
-    date: '2023-09-09',
-    start: '09:00',
-    end: '11:00',
-  },
-  {
-    name: '建设工程法规及相关知识',
-    cover: 'covers/yijian/2023/gcfg.jpeg',
-    date: '2023-09-09',
-    start: '14:00',
-    end: '17:00',
-  },
-  {
-    name: '建设工程项目管理',
-    date: '2023-09-10',
-    start: '09:00',
-    end: '12:00',
-  },
-  {
-    name: '建设工程法规及相关知识',
-    date: '2023-09-10',
-    start: '14:00',
-    end: '18:00',
-  },
-];
-
 const _exams: any = {
   '2023': [
     { name: '一级建造师', date: '2023-09-09' },
@@ -79,6 +50,36 @@ const _exams: any = {
     { name: '英语六级考试', date: '2023-12-09' },
     { name: ' 研究生考试', date: '2023-12-23' },
   ],
+};
+
+const _subjects = {
+  一级建造师: {
+    公共课: [
+      {
+        name: '建设工程经济',
+        cover: 'covers/yijian/2023/gcjj.png',
+        date: '2023-09-09',
+        start: '09:00',
+        end: '11:00',
+      },
+      {
+        name: '建设工程法规及相关知识',
+        cover: 'covers/yijian/2023/gcfg.jpeg',
+        date: '2023-09-09',
+        start: '14:00',
+        end: '17:00',
+      },
+      {
+        name: '建设工程项目管理',
+        date: '2023-09-10',
+        start: '09:00',
+        end: '12:00',
+      },
+    ],
+    "专业课": [
+
+    ]
+  },
 };
 
 export class ExamData {

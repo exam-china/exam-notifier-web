@@ -1,1 +1,18 @@
-<p>home works!</p>
+<div [ngClass]="{ 'subscribed-exam': true }" *ngIf="subscribedExams.length">
+    <p [ngClass]="{ left: true }">
+      距离 <span [ngClass]="{ year: true }">2023</span> 年
+    </p>
+    <div
+      [ngClass]="{ subscribed: true }"
+      *ngFor="let item of subscribedExams; index as i"
+    >
+      <p [ngClass]="{ middle: true }">
+        <span [ngClass]="{ name: true }">{{ item.name }}</span>
+        考试
+      </p>
+      <p>
+        还有<span [ngClass]="{ remained: true }">{{ item.remain }}</span
+        >天
+      </p>
+    </div>
+  </div>

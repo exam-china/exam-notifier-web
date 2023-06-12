@@ -20,6 +20,13 @@ import { HomeComponent } from './home/home.component';
 import { TestComponent } from './test/test.component';
 import { MyComponent } from './my/my.component';
 import { InfoComponent } from './info/info.component';
+import { SubjectComponent } from './subject/subject.component';
+import { YijianComponent } from './yijian/yijian.component';
+import { ErjianComponent } from './subject/erjian/erjian.component';
+import { Cet4Component } from './subject/cet4/cet4.component';
+import { Cet6Component } from './subject/cet6/cet6.component';
+import { JianliComponent } from './subject/jianli/jianli.component';
+import { IeltsComponent } from './subject/ielts/ielts.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +37,13 @@ import { InfoComponent } from './info/info.component';
     TestComponent,
     MyComponent,
     InfoComponent,
+    SubjectComponent,
+    YijianComponent,
+    ErjianComponent,
+    Cet4Component,
+    Cet6Component,
+    JianliComponent,
+    IeltsComponent,
   ],
   imports: [
     BrowserModule,
