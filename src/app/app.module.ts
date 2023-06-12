@@ -11,11 +11,26 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { FormsModule } from '@angular/forms';
-import { MatButtonToggleModule } 
-    from "@angular/material/button-toggle";
+import {MatButtonModule} from '@angular/material/button';
+
+import { MatButtonToggleModule } from '@angular/material/button-toggle';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
+import { HomeComponent } from './home/home.component';
+import { TestComponent } from './test/test.component';
+import { MyComponent } from './my/my.component';
+import { InfoComponent } from './info/info.component';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [
+    AppComponent,
+    HeaderComponent,
+    FooterComponent,
+    HomeComponent,
+    TestComponent,
+    MyComponent,
+    InfoComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -31,7 +46,8 @@ import { MatButtonToggleModule }
     MatIconModule,
     MatSlideToggleModule,
     FormsModule,
-    MatButtonToggleModule
+    MatButtonToggleModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent],
