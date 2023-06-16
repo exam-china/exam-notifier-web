@@ -1,18 +1,28 @@
 <div [ngClass]="{ 'subscribed-exam': true }" *ngIf="subscribedExams.length">
-    <p [ngClass]="{ left: true }">
-      距离 <span [ngClass]="{ year: true }">2023</span> 年
+  <p [ngClass]="{ left: true }">
+    距离 <span [ngClass]="{ year: true }">2023</span> 年
+  </p>
+  <div
+    [ngClass]="{ subscribed: true }"
+    *ngFor="let item of subscribedExams; index as i"
+  >
+    <p [ngClass]="{ middle: true }">
+      <span [ngClass]="{ name: true }">{{ item.name }}</span>
+      考试
     </p>
-    <div
-      [ngClass]="{ subscribed: true }"
-      *ngFor="let item of subscribedExams; index as i"
-    >
-      <p [ngClass]="{ middle: true }">
-        <span [ngClass]="{ name: true }">{{ item.name }}</span>
-        考试
-      </p>
-      <p>
-        还有<span [ngClass]="{ remained: true }">{{ item.remain }}</span
-        >天
-      </p>
-    </div>
+    <p>
+      还有<span [ngClass]="{ remained: true }">{{ item.remain }}</span
+      >天
+    </p>
   </div>
+</div>
+
+<div class="warning" *ngIf="!subscribedExams.length">
+  <p>您尚未添加考试信息，请点击右下放<span>+</span>号按钮添加您关注的考试信息</p>
+</div>
+
+<div class="add-new-test">
+  <button mat-fab color="primary" aria-label="添加新考试" routerLink="/test">
+    <mat-icon>add</mat-icon>
+  </button>
+</div>
