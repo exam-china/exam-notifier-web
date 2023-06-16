@@ -12,6 +12,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { FormsModule } from '@angular/forms';
 import {MatButtonModule} from '@angular/material/button';
+import {MatCardModule} from '@angular/material/card';
 
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { HeaderComponent } from './header/header.component';
@@ -27,6 +28,10 @@ import { Cet4Component } from './subject/cet4/cet4.component';
 import { Cet6Component } from './subject/cet6/cet6.component';
 import { JianliComponent } from './subject/jianli/jianli.component';
 import { IeltsComponent } from './subject/ielts/ielts.component';
+
+
+import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+
 
 @NgModule({
   declarations: [
@@ -61,9 +66,11 @@ import { IeltsComponent } from './subject/ielts/ielts.component';
     MatSlideToggleModule,
     FormsModule,
     MatButtonToggleModule,
-    MatButtonModule
+    MatButtonModule,
+    MatCardModule
   ],
   providers: [],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

@@ -132,3 +132,4 @@ export class ExamData {
 }
 
 export const exams = _exams;
+export const subjects = _subjects;
