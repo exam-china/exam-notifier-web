@@ -11,7 +11,8 @@
   <ng-container matColumnDef="name">
     <th mat-header-cell *matHeaderCellDef>考试名</th>
     <td mat-cell *matCellDef="let element">
-      <a routerLink="{{ element.name }}/subject">{{ element.name }}</a>
+      <!-- <a routerLink="{{ element.name }}/subject">{{ element.name }}</a> -->
+      {{ element.name }}
     </td>
   </ng-container>
   <ng-container matColumnDef="date">
@@ -20,7 +21,7 @@
   </ng-container>
 
   <ng-container matColumnDef="remain">
-    <th mat-header-cell *matHeaderCellDef>剩余<br />天数</th>
+    <th mat-header-cell *matHeaderCellDef>剩余天数</th>
     <td mat-cell *matCellDef="let element" class="remain">
       {{ element.remain }}
     </td>
