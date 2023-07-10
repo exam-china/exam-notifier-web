@@ -1,7 +1,7 @@
 {
   "configVersion": 1,
-  "timestamp": 1686899363740,
-  "index": "https://t1bao.github.io/exam-shedule/index.html",
+  "timestamp": 1688976482158,
+  "index": "https://exam-china.github.io/exam-shedule/index.html",
   "assetGroups": [
     {
       "name": "app",
@@ -11,13 +11,13 @@
         "ignoreVary": true
       },
       "urls": [
-        "https://t1bao.github.io/exam-shedule/favicon.ico",
-        "https://t1bao.github.io/exam-shedule/index.html",
-        "https://t1bao.github.io/exam-shedule/main.78a692f260c3cf72.js",
-        "https://t1bao.github.io/exam-shedule/manifest.webmanifest",
-        "https://t1bao.github.io/exam-shedule/polyfills.f3b8ddbeea7805a6.js",
-        "https://t1bao.github.io/exam-shedule/runtime.e9a7dea52a76a6eb.js",
-        "https://t1bao.github.io/exam-shedule/styles.abc6d54c123c2e41.css"
+        "https://exam-china.github.io/exam-shedule/favicon.ico",
+        "https://exam-china.github.io/exam-shedule/index.html",
+        "https://exam-china.github.io/exam-shedule/main.78a692f260c3cf72.js",
+        "https://exam-china.github.io/exam-shedule/manifest.webmanifest",
+        "https://exam-china.github.io/exam-shedule/polyfills.f3b8ddbeea7805a6.js",
+        "https://exam-china.github.io/exam-shedule/runtime.e9a7dea52a76a6eb.js",
+        "https://exam-china.github.io/exam-shedule/styles.abc6d54c123c2e41.css"
       ],
       "patterns": []
     },
@@ -29,29 +29,31 @@
         "ignoreVary": true
       },
       "urls": [
-        "https://t1bao.github.io/exam-shedule/assets/covers/yijian/2023/economy.png",
-        "https://t1bao.github.io/exam-shedule/assets/covers/yijian/2023/law.jpeg",
-        "https://t1bao.github.io/exam-shedule/assets/covers/yijian/2023/pm.png",
-        "https://t1bao.github.io/exam-shedule/assets/logo.svg",
-        "https://t1bao.github.io/exam-shedule/assets/qq.png"
+        "https://exam-china.github.io/exam-shedule/assets/covers/yijian/2023/economy.png",
+        "https://exam-china.github.io/exam-shedule/assets/covers/yijian/2023/law.jpeg",
+        "https://exam-china.github.io/exam-shedule/assets/covers/yijian/2023/pm.png",
+        "https://exam-china.github.io/exam-shedule/assets/logo.svg",
+        "https://exam-china.github.io/exam-shedule/assets/qq.png",
+        "https://exam-china.github.io/exam-shedule/assets/release/android/app-release.apk"
       ],
       "patterns": []
     }
   ],
   "dataGroups": [],
   "hashTable": {
-    "https://t1bao.github.io/exam-shedule/assets/covers/yijian/2023/economy.png": "3674842450f2521c2d3f4155d4bd26ac3f247bf1",
-    "https://t1bao.github.io/exam-shedule/assets/covers/yijian/2023/law.jpeg": "8d7e51f5df5cea9061a89e15ce912bae18e9db5c",
-    "https://t1bao.github.io/exam-shedule/assets/covers/yijian/2023/pm.png": "ca81be32a8a688c3a4009d88ba10b2c92ff3b1cf",
-    "https://t1bao.github.io/exam-shedule/assets/logo.svg": "33cd0f924309ccea00f79e20b333578bbfa29514",
-    "https://t1bao.github.io/exam-shedule/assets/qq.png": "8ac912b8dab77784d40cc0c717f77399365d1710",
-    "https://t1bao.github.io/exam-shedule/favicon.ico": "267d6c16b9234540c0297042ed04299b17c06574",
-    "https://t1bao.github.io/exam-shedule/index.html": "57b672782e727aead6dc87c32b49d8821159411e",
-    "https://t1bao.github.io/exam-shedule/main.78a692f260c3cf72.js": "7c65255f132ff9a226ab9ece78262b8210aebdd7",
-    "https://t1bao.github.io/exam-shedule/manifest.webmanifest": "5e5bdcf857d4b985efc5938732d7c3b3328c217e",
-    "https://t1bao.github.io/exam-shedule/polyfills.f3b8ddbeea7805a6.js": "ac62149bdc211ca85d04e2f5e7198a2a8ef21d16",
-    "https://t1bao.github.io/exam-shedule/runtime.e9a7dea52a76a6eb.js": "d650b3423b9e1ea6e9cc3e4bade20508da654a7e",
-    "https://t1bao.github.io/exam-shedule/styles.abc6d54c123c2e41.css": "b15d754c0124297ba10a576726135ecdc49a8ecd"
+    "https://exam-china.github.io/exam-shedule/assets/covers/yijian/2023/economy.png": "3674842450f2521c2d3f4155d4bd26ac3f247bf1",
+    "https://exam-china.github.io/exam-shedule/assets/covers/yijian/2023/law.jpeg": "8d7e51f5df5cea9061a89e15ce912bae18e9db5c",
+    "https://exam-china.github.io/exam-shedule/assets/covers/yijian/2023/pm.png": "ca81be32a8a688c3a4009d88ba10b2c92ff3b1cf",
+    "https://exam-china.github.io/exam-shedule/assets/logo.svg": "33cd0f924309ccea00f79e20b333578bbfa29514",
+    "https://exam-china.github.io/exam-shedule/assets/qq.png": "8ac912b8dab77784d40cc0c717f77399365d1710",
+    "https://exam-china.github.io/exam-shedule/assets/release/android/app-release.apk": "3b06ae9038cb106d1cd87a3d33d2cb42ba9e6176",
+    "https://exam-china.github.io/exam-shedule/favicon.ico": "267d6c16b9234540c0297042ed04299b17c06574",
+    "https://exam-china.github.io/exam-shedule/index.html": "072c4732c4cb358182906648af9d616fc78bb964",
+    "https://exam-china.github.io/exam-shedule/main.78a692f260c3cf72.js": "7c65255f132ff9a226ab9ece78262b8210aebdd7",
+    "https://exam-china.github.io/exam-shedule/manifest.webmanifest": "5e5bdcf857d4b985efc5938732d7c3b3328c217e",
+    "https://exam-china.github.io/exam-shedule/polyfills.f3b8ddbeea7805a6.js": "ac62149bdc211ca85d04e2f5e7198a2a8ef21d16",
+    "https://exam-china.github.io/exam-shedule/runtime.e9a7dea52a76a6eb.js": "d650b3423b9e1ea6e9cc3e4bade20508da654a7e",
+    "https://exam-china.github.io/exam-shedule/styles.abc6d54c123c2e41.css": "b15d754c0124297ba10a576726135ecdc49a8ecd"
   },
   "navigationUrls": [
     {

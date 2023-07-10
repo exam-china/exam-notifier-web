@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build --base-href=https://t1bao.github.io/exam-shedule/ && git add ./docs",
+    "build": "ng build --base-href=https://exam-china.github.io/exam-shedule/ && git add ./docs",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
