@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1688976482158,
+  "timestamp": 1705565848233,
   "index": "https://exam-china.github.io/exam-shedule/index.html",
   "assetGroups": [
     {
@@ -13,7 +13,7 @@
       "urls": [
         "https://exam-china.github.io/exam-shedule/favicon.ico",
         "https://exam-china.github.io/exam-shedule/index.html",
-        "https://exam-china.github.io/exam-shedule/main.78a692f260c3cf72.js",
+        "https://exam-china.github.io/exam-shedule/main.d46486a11d713e4d.js",
         "https://exam-china.github.io/exam-shedule/manifest.webmanifest",
         "https://exam-china.github.io/exam-shedule/polyfills.f3b8ddbeea7805a6.js",
         "https://exam-china.github.io/exam-shedule/runtime.e9a7dea52a76a6eb.js",
@@ -48,8 +48,8 @@
     "https://exam-china.github.io/exam-shedule/assets/qq.png": "8ac912b8dab77784d40cc0c717f77399365d1710",
     "https://exam-china.github.io/exam-shedule/assets/release/android/app-release.apk": "3b06ae9038cb106d1cd87a3d33d2cb42ba9e6176",
     "https://exam-china.github.io/exam-shedule/favicon.ico": "267d6c16b9234540c0297042ed04299b17c06574",
-    "https://exam-china.github.io/exam-shedule/index.html": "072c4732c4cb358182906648af9d616fc78bb964",
-    "https://exam-china.github.io/exam-shedule/main.78a692f260c3cf72.js": "7c65255f132ff9a226ab9ece78262b8210aebdd7",
+    "https://exam-china.github.io/exam-shedule/index.html": "9000e01377b26b17f89fb24ce2f797772236a715",
+    "https://exam-china.github.io/exam-shedule/main.d46486a11d713e4d.js": "5742b968b6f2ae5f6e71923f51bfa0e5561e66bb",
     "https://exam-china.github.io/exam-shedule/manifest.webmanifest": "5e5bdcf857d4b985efc5938732d7c3b3328c217e",
     "https://exam-china.github.io/exam-shedule/polyfills.f3b8ddbeea7805a6.js": "ac62149bdc211ca85d04e2f5e7198a2a8ef21d16",
     "https://exam-china.github.io/exam-shedule/runtime.e9a7dea52a76a6eb.js": "d650b3423b9e1ea6e9cc3e4bade20508da654a7e",
