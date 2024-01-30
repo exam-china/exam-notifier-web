@@ -72,10 +72,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "exam-notifier:build:production"
+              "buildTarget": "exam-notifier:build:production"
             },
             "development": {
-              "browserTarget": "exam-notifier:build:development"
+              "buildTarget": "exam-notifier:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -83,7 +83,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "exam-notifier:build"
+            "buildTarget": "exam-notifier:build"
           }
         },
         "test": {
